@@ -1,5 +1,7 @@
 package com.example.oskar;
 
+import java.util.Random;
+
 public class Kriticar {
     private String ime;
     private String prezime;
@@ -12,6 +14,13 @@ public class Kriticar {
             this.reputacija = reputacija;
         } else
             this.reputacija = 100;
+    }
+    public void  oceniFilm(Film film){
+        Random r = new Random();
+        film.dodajKritiku(new Kritika(r.nextInt(10)+1,this));
+    }
+    public void pohvali(Kriticar pohvaljeni){
+        pohvaljeni.reputacija = (int) (pohvaljeni.reputacija + this.reputacija * 0.1);
     }
 
     public String getIme() {
