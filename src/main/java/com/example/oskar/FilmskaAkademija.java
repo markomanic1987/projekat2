@@ -55,8 +55,7 @@ public class FilmskaAkademija {
             izvestaj = izvestaj + g;
         for (Glumac g : zenskaNominacija)
             izvestaj = izvestaj + g;
-        filmNominacija.sort(Collections.reverseOrder());
-        reziserNominacija.sort(Collections.reverseOrder());
+
         for (Reziser r : reziserNominacija)
             izvestaj = izvestaj + r;
         for (Film f : filmNominacija)

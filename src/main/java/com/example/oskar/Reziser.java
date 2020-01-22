@@ -37,4 +37,5 @@ public class Reziser extends ClanEkipe implements Comparable<Reziser> {
     public int compareTo(Reziser o) {
         return o.reziranihFilmova>reziranihFilmova ? 1 : o.reziranihFilmova<reziranihFilmova ? -1:0;
     }
+
 }

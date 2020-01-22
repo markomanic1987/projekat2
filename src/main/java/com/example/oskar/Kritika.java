@@ -21,4 +21,12 @@ public class Kritika {
     public Kriticar getKriticar() {
         return kriticar;
     }
+
+    public void setOcena(double ocena) {
+        this.ocena = ocena;
+    }
+
+    public void setKriticar(Kriticar kriticar) {
+        this.kriticar = kriticar;
+    }
 }

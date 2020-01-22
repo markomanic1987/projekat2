@@ -115,4 +115,32 @@ public class Film implements Nominovan,Comparable<Film> {
         getPredstavnik().primiOskara();
 
     }
+
+    public void setNaziv(String naziv) {
+        this.naziv = naziv;
+    }
+
+    public void setTrajanje(int trajanje) {
+        this.trajanje = trajanje;
+    }
+
+    public void setGodina(int godina) {
+        this.godina = godina;
+    }
+
+    public void setRejting(double rejting) {
+        this.rejting = rejting;
+    }
+
+    public void setZanr(Zanr zanr) {
+        this.zanr = zanr;
+    }
+
+    public void setClanoviEkipe(ArrayList<ClanEkipe> clanoviEkipe) {
+        this.clanoviEkipe = clanoviEkipe;
+    }
+
+    public void setKritike(ArrayList<Kritika> kritike) {
+        this.kritike = kritike;
+    }
 }

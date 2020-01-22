@@ -21,7 +21,7 @@ public class Glumac extends ClanEkipe {
     @Override
     public void primiOskara() {
         Random r= new Random();
-        if(r.nextInt(10)==10){
+        if(r.nextInt(10)==9){
             System.out.println("Obijam da drzim govor");
         } else
             odrziGovor();
@@ -29,10 +29,14 @@ public class Glumac extends ClanEkipe {
 
     @Override
     public String toString() {
-        return super.toString() + " " + lepGlas;
+        return getIme()+" "+getPrezime();
     }
 
     public boolean isLepGlas() {
         return lepGlas;
+    }
+
+    public void setLepGlas(boolean lepGlas) {
+        this.lepGlas = lepGlas;
     }
 }

@@ -10,6 +10,9 @@ public abstract class ClanEkipe implements Nominovan{
 
     public abstract void odrziGovor();
 
+    public ClanEkipe() {
+    }
+
     public ClanEkipe(String ime, String prezime, Date datumRodjenja, Pol pol) {
         this.ime = ime;
         this.prezime = prezime;
@@ -29,4 +32,29 @@ public abstract class ClanEkipe implements Nominovan{
     public Pol getPol() {
         return pol;
     }
+
+    public void setIme(String ime) {
+        this.ime = ime;
+    }
+
+    public void setPrezime(String prezime) {
+        this.prezime = prezime;
+    }
+
+    public void setDatumRodjenja(Date datumRodjenja) {
+        this.datumRodjenja = datumRodjenja;
+    }
+
+    public void setPol(Pol pol) {
+        this.pol = pol;
+    }
+
+    public String getIme() {
+        return ime;
+    }
+
+    public String getPrezime() {
+        return prezime;
+    }
+
 }
